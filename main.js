@@ -1,9 +1,13 @@
 document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            console.error('Target element not found:', this.getAttribute('href'));
+        }
     });
 });
