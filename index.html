@@ -16,7 +16,8 @@
             <div class="logo">Nikhil Kumar
                 <img src="images/logo1.png" alt="Dreamlock MR Pvt. Ltd.">
             </div>
-            <ul>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -41,7 +42,13 @@
         <p>&copy; 2025 Nikhil Kumar</p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
