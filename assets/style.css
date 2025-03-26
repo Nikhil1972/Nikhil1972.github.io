@@ -692,3 +692,9 @@ footer {
         height: 30px; /* Smaller logo for mobile */
     }
 }
+/* Remove all debug borders */
+* {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
