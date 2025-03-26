@@ -746,3 +746,7 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+section {
+    background: #1a1a1a; /* Solid background color */
+    padding: 40px 20px;
+}
