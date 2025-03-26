@@ -736,3 +736,13 @@ section, .main-content {
     box-sizing: border-box;
 }
 * { border: 1px solid red !important; }
+body {
+    padding-top: 80px; /* Match your header height */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
