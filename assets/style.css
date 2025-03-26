@@ -717,3 +717,21 @@ section {
         margin-bottom: 30px;
     }
 }
+/* Fix for hidden content */
+body {
+    padding-top: 80px; /* For fixed header */
+    overflow-x: hidden;
+}
+
+section, .main-content {
+    position: relative;
+    z-index: 1;
+    background: #1a1a1a;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+/* Ensure nothing is overlapping */
+* {
+    box-sizing: border-box;
+}
