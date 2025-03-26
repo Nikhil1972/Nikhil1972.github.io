@@ -692,3 +692,16 @@ footer {
         height: 30px; /* Smaller logo for mobile */
     }
 }
+/* Fix for overlapping sections */
+section {
+    position: relative;  /* Creates a new stacking context */
+    z-index: 1;         /* Ensures sections stay in order */
+    margin-bottom: 40px; /* Adds space between sections */
+}
+
+/* Ensure hero section doesn't overlap */
+.hero {
+    min-height: 100vh;
+    padding: 20px;
+    margin-bottom: 0; /* Remove extra space below hero */
+}
