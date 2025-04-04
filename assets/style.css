@@ -720,3 +720,33 @@ footer p {
         display: none; /* Hide tagline on mobile */
     }
 }
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  
+  .logo h1 {
+    color: #00c2ff;
+    font-size: 1.5rem;
+    margin: 0;
+    display: block !important; /* Force show */
+    visibility: visible !important;
+  }
+  
+  .tagline {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .logo h1 {
+      font-size: 1.3rem;
+    }
+    .tagline {
+      display: none;
+    }
+  }
