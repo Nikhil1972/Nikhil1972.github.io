@@ -59,7 +59,22 @@ header>
 
     <script src="assets/js/main.js"></script>
 
- 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuButton = document.querySelector('.menu-toggle');
+          const menu = document.querySelector('.main-nav');
+          
+          menuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            // Change icon from bars to X when open
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          });
+        });
+        </script>
+        
+
 </body>
 
 </html>
