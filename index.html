@@ -11,19 +11,32 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">Nikhil Kumar
-                <img src="images/logo1.png" alt="Dreamlock MR Pvt. Ltd.">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Add this in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Replace your entire <nav> with this -->
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <h1>Nikhil Kumar</h1>
+      <p>DreamlockMR®</p>
+    </div>
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Add this before </body> -->
+<script src="js/mobile-menu.js"></script>
 
     <section id="home" class="hero">
         <div class="hero-content">
