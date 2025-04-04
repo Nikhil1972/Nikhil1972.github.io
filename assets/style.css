@@ -494,3 +494,32 @@ footer p {
         font-size: 2rem;
     }
 }
+
+/* Show h1 only in home header */
+.home-header .logo h1 {
+    color: #00c2ff;
+    font-size: 1.5rem;
+    margin: 0;
+    display: block;
+  }
+  
+  /* Hide h1 on all other pages */
+  header:not(.home-header) .logo h1 {
+    display: none !important;
+  }
+  
+  /* Keep your existing navigation styles */
+  .header-container {
+    /* Your existing styles */
+  }
+  
+  .main-nav {
+    /* Your existing styles */
+  }
+  
+  /* Mobile menu styles remain unchanged */
+  @media (max-width: 768px) {
+    .home-header .logo h1 {
+      font-size: 1.3rem;
+    }
+  }
