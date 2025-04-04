@@ -511,3 +511,6 @@ footer p {
       padding: 20px;
     }
   }
+  .main-nav {
+    z-index: 1000; /* Ensures menu appears above content */
+  }
