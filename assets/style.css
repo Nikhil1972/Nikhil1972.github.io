@@ -46,7 +46,7 @@ header {
     margin: 0 auto;
 }
 
-/* Logo Styles - Ensures h1 is always visible */
+/* Logo Styles - Consistent across all pages */
 .logo {
     display: flex;
     align-items: baseline;
@@ -64,6 +64,7 @@ header {
     font-size: 0.9rem;
     color: #aaa;
     font-style: italic;
+    display: none; /* Hidden by default */
 }
 
 /* Main Navigation */
@@ -392,6 +393,13 @@ footer p {
     }
 }
 
+@media (min-width: 769px) {
+    /* Show tagline only on desktop */
+    .logo .tagline {
+        display: inline;
+    }
+}
+
 @media (max-width: 768px) {
     /* Navigation */
     .menu-toggle {
@@ -453,7 +461,7 @@ footer p {
         font-size: 1.8rem;
     }
     
-    /* Logo */
+    /* Hide tagline on mobile */
     .logo .tagline {
         display: none;
     }
@@ -494,35 +502,3 @@ footer p {
         font-size: 2rem;
     }
 }
-
-
-  
-  /* Logo Styles - For All Pages */
-.logo {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  
-  .logo .name {
-    color: #00c2ff;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .logo .tagline {
-    color: #aaa;
-    font-size: 0.9rem;
-    font-style: italic;
-  }
-  
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-    .logo .name {
-      font-size: 1.3rem;
-    }
-    .logo .tagline {
-      display: none;
-    }
-  }
