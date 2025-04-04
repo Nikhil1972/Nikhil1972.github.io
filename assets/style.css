@@ -494,3 +494,17 @@ footer p {
         font-size: 2rem;
     }
 }
+
+/* Logo Styles - Force h1 to be visible */
+.logo h1 {
+    color: #00c2ff !important; /* Force color */
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+    display: block !important; /* Override any hiding */
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    clip: auto !important;
+    height: auto !important;
+    width: auto !important;
+}
