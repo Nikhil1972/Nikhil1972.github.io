@@ -514,3 +514,71 @@ footer p {
   .main-nav {
     z-index: 1000; /* Ensures menu appears above content */
   }
+
+
+
+  /* Mobile Menu Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .main-nav a:hover {
+    color: #00c2ff;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    
+    .main-nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 70%;
+      height: 100vh;
+      background: #333;
+      padding-top: 80px;
+      transition: left 0.3s ease;
+    }
+    
+    .main-nav.active {
+      left: 0;
+    }
+    
+    .main-nav ul {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
