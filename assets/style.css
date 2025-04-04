@@ -689,3 +689,34 @@ footer p {
         background: rgba(0, 194, 255, 0.1);
     }
 }
+
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    color: #00c2ff;
+    font-size: 1.5rem;
+    margin: 0; /* Remove default margins */
+    display: block; /* Ensure it's always visible */
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
+}
+
+/* Show/hide elements based on screen size */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.3rem; /* Slightly smaller on mobile */
+    }
+    .logo p {
+        display: none; /* Hide tagline on mobile */
+    }
+}
