@@ -495,9 +495,3 @@ footer p {
     }
 }
 
-@media (min-width: 769px) {
-    .logo h1 {
-        display: block !important;
-        visibility: visible !important;
-    }
-}
