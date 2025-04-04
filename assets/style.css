@@ -497,4 +497,32 @@ footer p {
 
 
   
+  /* Logo Styles - For All Pages */
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
   
+  .logo .name {
+    color: #00c2ff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .logo .tagline {
+    color: #aaa;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .logo .name {
+      font-size: 1.3rem;
+    }
+    .logo .tagline {
+      display: none;
+    }
+  }
